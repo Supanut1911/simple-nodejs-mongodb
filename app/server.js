@@ -31,7 +31,6 @@ app.get('/fetch-data', function (req, res) {
   let response = {};
   MongoClient.connect(mongoUrlDockerCompose, mongoClientOptions, function (err, client) {
     if (err) throw err;
-
     let db = client.db(databaseName);
 
     let myquery = { myid: 1 };
