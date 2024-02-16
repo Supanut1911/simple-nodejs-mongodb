@@ -1,7 +1,7 @@
 version: '3.1'
 services:
     my-nodejs-app:
-      build: .
+      image: devsupanut/nodejs:1.0
       ports:
         - 3000:3000
       environment:
